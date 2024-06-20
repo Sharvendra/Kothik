@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    background-image: url(https://wallpaperaccess.com/full/2037485.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#nav{
+    height: 15%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+#nav>h1{
+    font-size: 24px;
+}
+#nav-p2{
+    width: 20%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+#nav>button{
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.362);
+    color: white;
+}
+#page1-content{
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(transparent,rgb(0, 0, 0));
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    padding: 100px;
+}
+#page1-content>h1{
+    font-size: 4vw;
+    width: 60%;
+}
+#page1-content>p{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 40%;
+    line-height: 26px;
+}
+#page1-content>button{
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color:rgb(205, 106, 0);
+    color: white;
+    margin-top: 40px;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color:#000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    padding-left: 150px;
+}
+#page2>h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    width: 30%;
+    font-weight: 400;
+}
+#page2-div{
+    height: 70%;
+    position: relative;
+    width:90%;
+    /* background-color: red; */
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#page2-div::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 100%;
+    width: 300px;
+    /* background-color: blue; */
+    position: relative;
+    display: inline-block;
+    white-space:normal;
+    overflow: hidden;
+    margin-right: 40px;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+.elem h4{
+    position: absolute;
+    bottom: 30%;
+    margin-left: 30px;
+    bottom: 10%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.elem h1{
+    position: absolute;
+    bottom: -40%;
+    margin-left: 30px;
+    font-weight: 400;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.elem:hover img{
+    scale: 1.2;
+}
+.elem:hover h4{
+    bottom: 30%;
+    opacity: 1;
+}
+.elem:hover h1{
+    bottom: 15%;
+    opacity: 1;
+}
+#page3{
+    height: 80vh;
+    width: 100vw;
+    background-color: #000;
+    color: white;
+}
+#offers{
+    width: 100vw;
+    height: 300px;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 270px;
+    margin-top: 25px;
+}
+#page3>h1{
+    text-align: center;
+    font-size: 2.6vw;
+    padding-top: 50px;
+}
+
+.o-elem{
+    height: 200px;
+    width: 270px;
+    background-color: #111;
+    padding: 20px;
+}
+.o-elem h1{
+    color: orangered;
+    font-size: 28px;
+    line-height: 35px;
+}
+.o-elem p{
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 25px;
+}
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#box-4{
+    height: 70vh;
+    width: 70vw;
+    background-color: #111;
+}
+#box-c{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: white;
+}
+#box-c p{
+    width: 40%;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 300;
+}
+#img-4
+{
+    height: 60vh;
+    width: 58vw;
+    background-color: darkmagenta;
+    position: absolute;
+    bottom: 0;
+}
+#img-4 img{
+    height: 100%;
+    width: 100%;
+}
+#img-4 i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: white;
+}
+#page5{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#tour{
+    height: 70vh;
+    width: 70vw;
+    background-color: salmon;
+}
